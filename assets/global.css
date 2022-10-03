@@ -1039,10 +1039,12 @@ body {
 \*-----------------------------------*/
 
 .footer {
-  background-color: var(--raisin-black-1);
+  background-color: var(--davys-gray);
   color: var(--cool-gray);
 }
-
+.footer-item {
+  align-items: baseline;
+}
 .footer-top {
   padding-block-end: 60px;
   display: grid;
@@ -1055,7 +1057,10 @@ body {
   font-weight: var(--fw-500);
   margin-block-end: 20px;
 }
-
+.footer-link, .footer-item {
+  display: flex;
+  gap: 8px;
+}
 .footer-text { margin-block-end: 30px; }
 
 .footer .social-list { gap: 12px; }
@@ -1076,6 +1081,8 @@ body {
   font-size: var(--fs-8);
   margin-block-start: 15px;
   transition: var(--transition-1);
+  display: flex;
+  gap: 8px;
 }
 
 .footer-link:is(:hover, :focus) { color: var(--mustard); }
@@ -1582,7 +1589,7 @@ body {
 
   .footer-top {
     grid-template-columns: 1fr 0.5fr 0.5fr 0.9fr;
-    padding-block: 120px;
+    padding-block: 80px;
   }
 
   .footer-bottom {

@@ -1,6 +1,8 @@
 <script>
   import Head from './head.svelte';
   import Nav from "./nav.svelte";
+  import Footer from "./footer.svelte"
+  
   export let content, layout, allContent, allLayouts;
 </script>
 
@@ -14,4 +16,5 @@
   </header>
   <svelte:component this={layout} {...content.fields} {allContent} {allLayouts} {content}/>
 </body>
+<Footer/>
 </html>
