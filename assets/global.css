@@ -213,6 +213,7 @@ body {
 .container { padding-inline: 15px; }
 
 .section { padding-block: var(--section-padding); }
+.section-tech { padding-block: var(--section-tech-padding); }
 
 .h1,
 .h2 { letter-spacing: -2px; }
@@ -1031,7 +1032,13 @@ body {
 .blog-card .card-title:is(:hover, :focus) { color: var(--majorelle-blue); }
 
 
-
+.logos-list {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 80px;
+  justify-content: center;
+}
 
 
 /*-----------------------------------*\
@@ -1252,6 +1259,7 @@ body {
      */
 
     --section-padding: 120px;
+    --section-tech-padding: 60px;
 
   }
 
