@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34.396mm" height="27.293mm" version="1.1" viewBox="0 0 34.396 27.293" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-199.97 -224.39)" fill="none" stroke-linecap="round">
+  <g stroke-width="1.062">
+   <g stroke-linejoin="round">
+    <g>
+     <rect x="213.21" y="224.93" width="7.9029" height="7.5637" rx="1.9958" ry="1.9958" stroke="#0b3b65"/>
+     <rect x="208.38" y="234.26" width="7.9029" height="7.5637" rx="1.9958" ry="1.9958" stroke="#0b3b65"/>
+     <rect x="218.05" y="234.26" width="7.9029" height="7.5637" rx="1.9958" ry="1.9958" stroke="#22a6ed"/>
+     <rect x="213.21" y="243.59" width="7.9029" height="7.5637" rx="1.9958" ry="1.9958" stroke="#22a6ed"/>
+    </g>
+    <rect x="222.89" y="243.59" width="7.9029" height="7.5637" rx="1.9958" ry="1.9958" stroke="#fe8e30" stroke-opacity=".81961"/>
+    <rect x="203.54" y="243.59" width="7.9029" height="7.5637" rx="1.9958" ry="1.9958" stroke="#0b3b65"/>
+   </g>
+   <g stroke="#fd6a6a">
+    <path d="m227.25 227.29-1.2024 1.2024"/>
+    <path d="m207.08 227.29 1.2024 1.2024"/>
+    <path d="m227.25 229.56-1.2024 1.2024"/>
+    <path d="m207.08 229.56 1.2024 1.2024"/>
+    <path d="m229.53 227.29-1.2024 1.2024"/>
+    <path d="m204.8 227.29 1.2024 1.2024"/>
+   </g>
+  </g>
+  <g transform="matrix(.17699 0 0 .17699 99.979 574.18)" stroke="#fd6a6a" stroke-width="6">
+   <path d="m743.41-1902.2-6.7935 6.7934"/>
+   <path d="m743.41-1889.4-6.7935 6.7934"/>
+   <path d="m756.27-1902.2-6.7935 6.7934"/>
+   <g transform="translate(0,-1.8069)">
+    <path d="m580.78-1900.4 6.7935 6.7934"/>
+    <path d="m580.78-1887.6 6.7935 6.7934"/>
+    <path d="m567.93-1900.4 6.7935 6.7934"/>
+   </g>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,292 @@
+{
+	"meta": {
+	  "desc": "Plenti is a theme for the Plentico static site generator",
+	  "keywords": "Plenti, Svelte, Go, SSG, JAMstack, Themes"
+	},
+	  "components": [
+		  {
+			"name": "hero",
+			"fields": {
+				"title1": "Welcome to",
+				"title2": "Plenti",
+				"subtitle": "Build super fast Jamstack websites with an integrated, Git-backed CMS",
+				"body": "This is a demo website to showcase Plenti SSG",
+				"link": {
+					"title": "GET STARTED",
+					"url": "."
+				},
+				"background": {
+					"url": "/hero-bg.png",
+					"alt": "Background"
+				},
+				"images": 
+					{
+						"banner": {
+							"url": "/hero-banner.png",
+							"alt": "Man lifting weights"
+						},
+						"circle1": {
+							"url": "/hero-circle-one.png",
+							"alt": "circles 1"
+						},
+						"circle2": {
+							"url": "/hero-circle-two.png",
+							"alt": "circles 2"
+							},
+						"heartrate": {
+							"url": "/heart-rate.svg",
+							"alt": "heart rate"
+						},
+						"calories": {
+							"url": "/calories.svg",
+							"alt": "calories"
+						}
+					}
+				
+			 	}
+			},
+		  	{
+			  "name": "features",
+			  "fields": {
+				  "title": "Welcome To Our Fitness Gym",
+				  "subtitle": "ABOUT US",
+				  "body": "<p>Nam ut hendrerit leo. Aenean vel ipsum nunc. Curabitur in tellus vitae nisi aliquet dapibus non et erat. Pellentesque porta sapien non accumsan dignissim curabitur sagittis nulla sit amet dolor feugiat.</p><br><p>Integer placerat vitae metus posuere tincidunt. Nullam suscipit ante ac aliquet viverra vestibulum ante ipsum primis.</p>",
+				  "background": "",
+				  "coach": {
+					"name": "Denis Robinson",
+					"title": "Our Coach"
+					},
+				  "link": {
+					  "title": "Explore More",
+					  "url": "."
+				 	},
+				  "images": {
+					  "banner": {
+						"url": "/about-banner.png",
+						"alt": "Women exercising"
+						},
+					  "coach": {
+						"url": "/about-coach.jpg",
+						"alt": "Trainer"
+						},
+					  "circle1": {
+						"url": "/about-circle-one.png",
+						"alt": "circles 1"
+						},
+					  "circle2": {
+						"url": "/about-circle-two.png",
+						"alt": "circles 2"
+						},
+					  "fitness": {
+						"url": "/fitness.png",
+						"alt": "fitness"
+						}
+					}
+			  	} 
+		  	},
+			{
+				"name": "video",
+				"fields": {
+					"title": "Explore Fitness Life",
+                    "video": {
+                        "url": "https://www.youtube.com/watch?v=EKUNGQ4LmH8"
+                    },
+					"button": {
+                        "title": "Play",
+                        "icon1": "play-btn",
+                        "icon2": "play-sharp"
+                    },
+                    "image": {
+					  "url": "/video-banner.jpg",
+					  "alt": "Man lifting weights"
+				    },
+                    "link": {
+					  "title": "WATCH MORE",
+					  "url": "."
+				   }
+                    
+                }
+			},
+			{
+				"name": "classes",
+				"fields": {
+					"title": "Fitness Classes For Every Goal",
+                    "subtitle": "OUR CLASSES",
+					"items": [
+						{   
+							"class": {
+								"name": "Weight Lifting",
+								"url": "."
+							},
+							"body": "Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.",
+                            "icon": {
+                                "url": "/class-icon-1.png",
+                                "alt": "Weight Lifting"
+                            },
+							"image": {
+								"url": "/class-1.jpg",
+								"alt": "Weight Lifting"
+							},
+                            "bars": {
+								"label": "Class Full",
+								"percent": "85%",
+								"line": "Weights"
+							}
+						},
+                        {   
+							"class": {
+								"name": "Cardio & Strength",
+								"url": "."
+							},
+							"body": "Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.",
+                            "icon": {
+                                "url": "/class-icon-2.png",
+                                "alt": "Cardio & Strength"
+                            },
+							"image": {
+								"url": "/class-2.jpg",
+								"alt": "Cardio & Strength"
+							},
+                            "bars": {
+								"label": "Class Full",
+								"percent": "70%",
+								"line": "Cardio"
+							}
+						},
+                        {   
+							"class": {
+								"name": "Power Yoga",
+								"url": "."
+							},
+							"body": "Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.",
+                            "icon": {
+                                "url": "/class-icon-3.png",
+                                "alt": "Power Yoga"
+                            },
+							"image": {
+								"url": "/class-3.jpg",
+								"alt": "Power Yoga"
+							},
+                            "bars": {
+								"label": "Class Full",
+								"percent": "90%",
+								"line": "Yoga"
+							}
+						},
+                        {   
+							"class": {
+								"name": "The Fitness Pack",
+								"url": "."
+							},
+							"body": "Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.",
+                            "icon": {
+                                "url": "/class-icon-4.png",
+                                "alt": "The Fitness Pack"
+                            },
+							"image": {
+								"url": "/class-4.jpg",
+								"alt": "The Fitness Pack"
+							},
+                            "bars": {
+								"label": "Class Full",
+								"percent": "60%",
+								"line": "Fitness Pack"
+							}
+						}
+					]
+				}
+			},
+          	{
+				"name": "blog",
+				"fields": {
+					"title": "Latest Blog Feed",
+					"subtitle": "OUR NEWS",
+					"items": [
+						{
+                            "blog": {
+                                "title": "Going to the gym for the first time",
+                                "body": "Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In hac habitasse platea dictumst.",
+                                "url": "."
+                            },
+                            "image": {
+                                "url": "/blog-1.jpg",
+                                "alt": "Going to the gym for the first time"
+                            },
+                            "date": "7 JULY 2022",
+				            "link": {
+					           "title": "Read More",
+					           "url": "."
+				            }
+						},
+                        {
+                            "blog": {
+                                "title": "Parturient accumsan cacus pulvinar magna",
+                                "body": "Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In hac habitasse platea dictumst.",
+                                "url": "."
+                            },
+                            "image": {
+                                "url": "/blog-2.jpg",
+                                "alt": "Going to the gym for the first time"
+                            },
+                            "date": "7 JULY 2022",
+				            "link": {
+					           "title": "Read More",
+					           "url": "."
+				            }
+						},
+                        {
+                            "blog": {
+                                "title": "Risus purus namien parturient accumsan cacus",
+                                "body": "Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In hac habitasse platea dictumst.",
+                                "url": "."
+                            },
+                            "image": {
+                                "url": "/blog-3.jpg",
+                                "alt": "Going to the gym for the first time"
+                            },
+                            "date": "7 JULY 2022",
+				            "link": {
+					           "title": "Read More",
+					           "url": "."
+				            }
+						}
+					]
+				}
+			},
+		  {
+			  "name": "contact",
+			  "fields": {
+				  "title": "Contact me",
+				  "line2": "get in touch.",
+				  "line3": "Get in Touch",
+				  "body": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?",
+				  "name":{
+					  "heading": "Name",
+					  "name": "Prakash Shahi",
+					  "icon": "fas fa-user"
+				  	},
+				  "address":{
+				 	  "heading": "Address",
+					  "location": "Surkhet, Nepal",
+					  "icon": "fas fa-map-marker-alt"
+				  	},
+				  "email":{
+					  "heading": "Email",
+					  "address": "abc@gmail.com",
+					  "icon": "fas fa-envelope"
+					},
+				  "button": {
+					  "title": "Send message",
+					  "url": "."
+				  	},
+				  "form": {
+					  "title": "Message me",
+					  "name": "Name",
+					  "email": "Email",
+					  "subject": "Subject",
+					  "message": "Message"
+				  	}
+			    }
+		  	}
+	  	]
+  	}

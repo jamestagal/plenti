@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34.396mm" height="35.428mm" version="1.1" viewBox="0 0 34.396 35.428" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(31.839 -62.97)">
+  <g fill="none" stroke-linecap="round" stroke-width="1.3029">
+   <path d="m-13.987 97.746h-12.277c-2.728 0-4.9243-2.1962-4.9243-4.9243v-24.276c0-2.7281 2.1962-4.9243 4.9243-4.9243h19.282c2.7281 0 4.9243 2.1962 4.9243 4.9243v7.491" opacity=".819" stroke="#22a6ed" stroke-linejoin="round"/>
+   <g stroke="#0b3b65">
+    <path d="m-25.648 71.745h5.1233"/>
+    <path d="m-23.894 75.002h5.1233"/>
+    <path d="m-25.648 78.26h5.1233"/>
+    <path d="m-16.147 75.002h5.1233"/>
+   </g>
+  </g>
+  <g transform="matrix(.21714 0 0 .21714 -305.37 377.43)">
+   <g fill="none" stroke-linecap="round" stroke-width="6">
+    <rect x="1353.7" y="-1349.4" width="61.414" height="61.414" rx="12.986" ry="12.295" stroke="#fed330" stroke-linejoin="round"/>
+    <path d="m1365.9-1352.7v-12.258c0-6.8115 5.792-12.295 12.986-12.295h10.875c7.1944 0 12.986 5.4835 12.986 12.295v12.258" stroke="#0b3b65" stroke-linejoin="round"/>
+    <path d="m1384.4-1323.9v10.346" stroke="#0b3b65"/>
+   </g>
+   <circle cx="1384.4" cy="-1323.9" r="3.8628" fill="#0b3b65" fill-rule="evenodd" stroke="#0b3b65" stroke-width="1.1795px"/>
+  </g>
+  <g fill="none" stroke="#0b3b65" stroke-linecap="round" stroke-width="1.3029">
+   <path d="m-23.46 81.517h5.1233"/>
+   <path d="m-25.648 84.774h5.1233"/>
+   <path d="m-18.335 78.26h5.1233"/>
+  </g>
+ </g>
+</svg>
