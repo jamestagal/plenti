@@ -1,3 +1,8 @@
+<script>
+  import { TabsInstall } from '../components/tabs-install.svelte';
+  export let currentTab, tabItems;
+</script>
+
 <section class="section hero" id="home" aria-label="hero">
   <div class="container">
 
@@ -12,6 +17,8 @@
       </p>
 
       <div class="wrapper">
+        <h3>Get Started With Plenti</h3>
+        <TabsInstall bind:activeTabValue={currentTab} items={tabItems} />
         <a href="." class="btn btn-primary has-before has-after">Let me try it out!</a>
 
         <button class="hero-btn" aria-label="pixology promo">
@@ -20,8 +27,7 @@
           <span class="span">Behind the scenes</span>
         </button>
       </div>
-
-      <ul class="social-list">
+<!--       <ul class="social-list">
 
         <li>
           <a href="." class="social-link" style="--color: hsl(241, 77%, 63%);">
@@ -47,7 +53,7 @@
           </a>
         </li>
 
-      </ul>
+      </ul> -->
 
     </div>
 

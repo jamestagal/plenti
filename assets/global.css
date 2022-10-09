@@ -20,6 +20,8 @@
   /**
    * colors
    */
+   --accent-dark: rgb(254, 139, 48);
+   --base-light: rgb(245, 245, 245);
 /*-----------------------------------*\
   #CUSTOM FOR BROWSER CONTAINER
 \*-----------------------------------*/
@@ -545,11 +547,41 @@ body {
   background-color: var(--color);
   color: var(--white);
 }
+/* Code */
+code {
+  font-size: 1rem;
+  color: var(--accent-dark);
+  background-color: var(--base-light);
+  padding: 5px;
+  font-family: 'Inconsolata', monospace;
+  font-weight: bold;
+  border-radius: 5px;
+}
 
-/*-----------------------------------*\
-  #Waves
-\*-----------------------------------*/
+/* Tabs */
+.tabs {
+  margin-top: 30px;
+}
 
+.tabs-header {
+  display: flex;
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.tabs-header li {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.tabs-content {
+  font-size: 18px;
+  padding: 20px;
+  border: 1px solid #333;
+  font-weight: bold;
+  background: #f4f4f4;
+}
 
 /*-----------------------------------*\
   #Browser container
