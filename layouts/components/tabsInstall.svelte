@@ -37,10 +37,10 @@ const handleClick = tabValue => () => (activeTabValue = tabValue);
 <!-- Tabs -->
 <div class="tabs">
     <ul class="tabs-header">
-      <li class="default-tab">{tabItems.label.value(1)("")}</li>
-      <li>{tabItems.label.value(2)("")}</li>
-      <li>{tabItems.label.value(3)("")}</li>
-      <li>{tabItems.label.value(4)("")}</li>
+      <li class="default-tab">{tabItems[0].label}</li>
+      <li>{tabItems[1].label}</li>
+      <li>{tabItems[2].label}</li>
+      <li>{tabItems[3].label}</li>
     </ul>
 
     <ul class="tabs-content">

@@ -1,5 +1,5 @@
 <script>
-  import { TabsInstall } from '../components/tabs-install.svelte';
+  import { TabsInstall } from '../components/tabsInstall.svelte';
   export let currentTab, tabItems;
 </script>
 
