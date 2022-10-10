@@ -38,7 +38,7 @@
       {/if}
       {#if 3 === activeTabValue}
       <li class="tab">
-        Windows is not yet supported, it needs <a href="https://github.com/plentico/plenti/issues/45" target="_blank" rel="noopener noreferrer">your help</a>!<br>
+        <span>Windows is not yet supported, it needs <a href="https://github.com/plentico/plenti/issues/45" target="_blank">your help!</a></span>
         1. Add the bucket: 
         <code>scoop bucket add plenti https://github.com/plentico/scoop-plenti</code><br>
         2. Install: <code>scoop install plenti</code>
@@ -46,7 +46,7 @@
       {/if}
       {#if 4 === activeTabValue}
       <li class="tab">
-        1. Download the latest <a href="https://github.com/plentico/plenti/releases">release</a><br>
+        1. Download the latest <a href="https://github.com/plentico/plenti/releases">release</a>
         2. Move it somewhere in your <code>PATH</code> (most likely <code>/usr/local/bin</code>)
       </li>
       {/if}
