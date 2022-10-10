@@ -1,5 +1,5 @@
 <script>
-  import { TabsInstall } from '../components/tabsInstall.svelte';
+  import TabsInstall from '../components/tabsInstall.svelte';
   export let currentTab, tabItems;
 </script>
 
@@ -15,10 +15,10 @@
       <p class="hero-text">
         We're an open source Svelte SSG that handles routing, pagination, HTML fallbacks, and more so you can build apps with less hassle.
       </p>
-
+      <h2>Get Started With Plenti</h2>
+      <TabsInstall bind:activeTabValue={currentTab} items={tabItems} />
+      <br>
       <div class="wrapper">
-        <h3>Get Started With Plenti</h3>
-        <TabsInstall bind:activeTabValue={currentTab} items={tabItems} />
         <a href="." class="btn btn-primary has-before has-after">Let me try it out!</a>
 
         <button class="hero-btn" aria-label="pixology promo">
