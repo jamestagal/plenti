@@ -1,15 +1,8 @@
 <script>
 
-export let items = [];
-export let activeTabValue;
+  export let activeTabValue = 1;
 
-  // Set default tab value
- if (Array.isArray(items) && items.length && items[0].value) {
-    activeTabValue = items[0].value;
-};
-
-
-const handleClick = tabValue => () => (activeTabValue = tabValue);
+  const handleClick = tabValue => () => (activeTabValue = tabValue);
 
   // List of tab items with labels and values.
   let tabItems = [
@@ -18,32 +11,18 @@ const handleClick = tabValue => () => (activeTabValue = tabValue);
     { label: "Scoop (Windows)", value: 3 },
     { label: "Manual", value: 4 }
   ];
-
-  // Current active tab
-  let currentTab;
 </script>
-
-<ul>
-{#if Array.isArray(items)}
-  {#each items as item}
-    <li class={activeTabValue === item.value ? 'active' : ''}>
-      <span on:click={handleClick(item.value)}>{item.label}</span>
-    </li>
-  {/each}
-{/if}
-</ul>
-
 
 <!-- Tabs -->
 <div class="tabs">
     <ul class="tabs-header">
       {#each tabItems as item}
-      <li class="default-tab">{item.label}</li>
-    {/each}
+        <li class="default-tab" on:click={handleClick(item.value)}>{item.label}</li>
+      {/each}
     </ul>
 
     <ul class="tabs-content">
-      {#if 1 === currentTab}
+      {#if 1 === activeTabValue}
       <li class="tab">
         1. Add the tap: 
         <code>brew tap plentico/homebrew-plenti</code><br>
@@ -51,13 +30,13 @@ const handleClick = tabValue => () => (activeTabValue = tabValue);
         <code>brew install plenti</code>
       </li>
       {/if}
-      {#if 2 === currentTab}
+      {#if 2 === activeTabValue}
       <li class="tab">
         1. Install:
         <code>snap install plenti</code>
       </li>
       {/if}
-      {#if 3 === currentTab}
+      {#if 3 === activeTabValue}
       <li class="tab">
         Windows is not yet supported, it needs <a href="https://github.com/plentico/plenti/issues/45" target="_blank" rel="noopener noreferrer">your help</a>!<br>
         1. Add the bucket: 
@@ -65,7 +44,7 @@ const handleClick = tabValue => () => (activeTabValue = tabValue);
         2. Install: <code>scoop install plenti</code>
       </li>
       {/if}
-      {#if 4 === currentTab}
+      {#if 4 === activeTabValue}
       <li class="tab">
         1. Download the latest <a href="https://github.com/plentico/plenti/releases">release</a><br>
         2. Move it somewhere in your <code>PATH</code> (most likely <code>/usr/local/bin</code>)
