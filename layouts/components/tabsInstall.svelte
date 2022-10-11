@@ -38,8 +38,9 @@
       </li>
       {/if}
       {#if 3 === activeTabValue}
+
       <li class="tab">
-        <span>Windows is not yet supported, it needs <a href="https://github.com/plentico/plenti/issues/45" target="_blank">your help!</a></span>
+        Windows is not yet supported, it needs  <a href="https://github.com/plentico/plenti/issues/45" target="_blank" rel="noopener noreferrer">your help</a>!<br>
         1. Add the bucket: 
         <code>scoop bucket add plenti https://github.com/plentico/scoop-plenti</code><br>
         2. Install: <code>scoop install plenti</code>
@@ -58,6 +59,10 @@
 <style>
     .tabs {
       margin-top: 30px;
+    }
+    .tab a {
+      font-weight: bold;
+      color: var(--majorelle-blue);
     }
     .tabs-header {
       display: flex;
