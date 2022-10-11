@@ -3,7 +3,7 @@
   export let activeTabValue = 1;
 
   const handleClick = tabValue => () => (activeTabValue = tabValue);
-
+  
   // List of tab items with labels and values.
   let tabItems = [
     { label: "Homebrew (Mac)", value: 1 },
@@ -17,7 +17,8 @@
 <div class="tabs">
     <ul class="tabs-header">
       {#each tabItems as item}
-        <li class="default-tab" on:click={handleClick(item.value)}>{item.label}</li>
+        <li class={activeTabValue === item.value ? 'active' : ''} on:click={handleClick(item.value)} >{item.label}
+        </li>
       {/each}
     </ul>
 
@@ -60,19 +61,51 @@
     }
     .tabs-header {
       display: flex;
+      /* background-color: var(--majorelle-blue); */
       background: #333;
-      color: #fff;
       padding: 10px 20px;
     }
+  /*   .tabs-header-primary {
+      color: var(--mustard);
+    } */
     .tabs-header li {
       margin-right: 20px;
       cursor: pointer;
+      color: #FEC02F;
     }
+    li.active { 
+      color: #fff;
+    }
+   /*  .tabs-header::before,
+    .tabs-header::after {
+      right: 0;
+      width: 100%;
+      height: 50%;
+      transform: scaleX(0);
+      background-color: var(--mustard);
+      z-index: -1;
+      transition: transform var(--transition-1);
+    }
+    .tabs-header::before {
+      top: 0;
+      transform-origin: left;
+    }
+    .tabs-header::after {
+      top: 50%;
+      transform-origin: right;
+    }
+    .tabs-header:is(:hover, :focus)::before,
+    .tabs-header:is(:hover, :focus)::after { transform: scaleX(1); }
+    .tabs-header:is(:hover, :focus)::before { transform-origin: right; }
+    .tabs-header:is(:hover, :focus)::after { transform-origin: left; }
+
+    .tabs-header-primary:is(:hover, :focus) { color: var(--majorelle-blue); }
+ */
     .tabs-content {
-      font-size: 18px;
+      font-size: 14px;
       padding: 20px;
       border: 1px solid #333;
-      font-weight: bold;
+      /* font-weight: bold; */
       background: #f4f4f4;
     }
   </style>
