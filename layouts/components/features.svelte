@@ -1,5 +1,7 @@
 <script>
 import Waves from '../components/waves.svelte';
+/* import TabsInstall from '../components/tabsInstall.svelte';
+  export let currentTab, tabItems; */
 //tabs
 let openTab = 1
 function toggleTabs(tabNumber){
@@ -9,7 +11,11 @@ function toggleTabs(tabNumber){
 <Waves />
 <section class="section pricing" id="pricing" aria-label="pricing">
     <div class="container">
-
+<!--       <div class="hero-wrapper">
+        <h2>Get Started With Plenti</h2>
+        <TabsInstall bind:activeTabValue={currentTab} items={tabItems} />
+      </div>
+ -->
       <!-- <p class="section-subtitle has-before text-center">Features</p> -->
 
       <h2 class="h2 section-title text-center">Why use <span class="has-before">Plenti</span> ?</h2>
@@ -28,8 +34,19 @@ function toggleTabs(tabNumber){
                 </div>
             </a>
             <ul id="navigation">
-                <!-- <li><a href="index.html#contact">Contact</a></li> -->
-                <li><a href="https://github.com/plentico/plenti"><img src="./assets/github.svg" alt="GitHub Octocat Icon"></a></li>
+
+              <li>
+                <a href="https://www.youtube.com/jantcu" target="_blank" class="social-link" style="font-size: 4rem; color: hsl(0, 100%, 50%);)">
+                  <ion-icon name="logo-youtube" role="img" class="md hydrated" aria-label="logo youtube"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://twitter.com/plentico" target="_blank" class="social-link" style="font-size: 4rem; color: hsl(203, 89%, 53%);">
+                  <ion-icon name="logo-twitter" role="img" class="md hydrated" aria-label="logo twitter"></ion-icon>
+                </a>
+              </li>
+                <li><a href="https://github.com/plentico/plenti" target="_blank"><img src="./assets/github.svg" alt="GitHub Octocat Icon"></a></li>
             </ul>
         </div>
       <div class="pricing-tab-container">
