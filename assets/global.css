@@ -547,6 +547,11 @@ body {
   background-color: var(--color);
   color: var(--white);
 }
+
+.hero-wrapper {
+  margin-block-start: -190px;
+    width: calc(100% - 10px);
+  }
 /* Code */
 code {
   font-size: 1.5rem;
@@ -616,6 +621,7 @@ code {
 
 
 #navigation{
+  display: flex;
 	margin:0;
 	padding: 10px;
 }
