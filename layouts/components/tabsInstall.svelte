@@ -40,7 +40,7 @@
       {#if 3 === activeTabValue}
 
       <li class="tab">
-        Windows is not yet supported, it needs  <a href="https://github.com/plentico/plenti/issues/45" target="_blank" rel="noopener noreferrer">your help</a>!<br>
+        Windows is not yet supported, it needs <a class="dontwrap" href="https://github.com/plentico/plenti/issues/45" target="_blank" rel="noopener noreferrer">your help</a>!<br>
         1. Add the bucket: 
         <code>scoop bucket add plenti https://github.com/plentico/scoop-plenti</code><br>
         2. Install: <code>scoop install plenti</code>
@@ -80,6 +80,12 @@
     }
     li.active { 
       color: #fff;
+    }
+    li {
+    white-space: nowrap;
+    }
+    .dontwrap li a {
+    white-space: nowrap;
     }
    /*  .tabs-header::before,
     .tabs-header::after {
