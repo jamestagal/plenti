@@ -30,7 +30,7 @@
           </li>
 
           <li class="navbar-item">
-            <a href="#Donate" class="navbar-link" data-nav-link="">Donate</a>
+            <a href="https://github.com/sponsors/plentico" class="navbar-link" data-nav-link="">Donate</a>
           </li>
 
         </ul>
