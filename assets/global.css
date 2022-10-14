@@ -667,7 +667,11 @@ code {
   #SERVICE
 \*-----------------------------------*/
 
-.service 
+.service { background-color: var(--ghost-white); }
+
+.service .section-title { margin-block: 30px 60px; }
+
+/* .service 
 { background-color: #0f0cac; 
   background-image: linear-gradient(to bottom, var(--plenti-blue), rgb(15 23 42 / 0));
 }
@@ -732,7 +736,7 @@ code {
   transition: var(--transition-1);
 }
 
-.service .link-card:is(:hover, :focus) ion-icon { color: hsl(var(--color)); }
+.service .link-card:is(:hover, :focus) ion-icon { color: hsl(var(--color)); } */
 
 
 

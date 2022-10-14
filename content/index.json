@@ -45,6 +45,50 @@
 				
 			 	}
 			},
+			{
+				"name": "setup",
+				"fields": {
+					"title1": "Minimal ",
+					"title2": "Setup Required",
+					"subtitle": " FEATURES",
+					"items": [
+						{
+							"title": "Out-of-the-Box",
+							"title_accent": "Content Editing",
+							"body": "Ship sites with a lightweight Content Management System. No extra software is needed to handoff to editors.",
+							"img": "/edit.png"
+						},
+						{
+							"title": "Git Backend",
+							"title_accent": "No Database",
+							"body": "Ditch the SQL headaches and simply connect to a Git backend. Finally content editors and developers can speak the same language.",
+							"img": "/git.png",
+							"alt": "Git repo"
+						},
+						{
+							"title": "Content Structure",
+							"title_accent": "Flexible",
+							"body": "There are no required fields or content types in Plenti. You define whatever structure works best for you and your project.",
+							"img": "/json.png",
+							"alt": "Json file"
+						},
+						{
+							"title": "Svelte Components",
+							"title_accent": "Reactive",
+							"body": "Build with a fast and easy to understand component framework. Enjoy automatic HTML fallbacks for your single page apps.",
+							"img": "/svelte.png",
+							"alt": "Svelte file"
+						},
+						{
+							"title": "Commandline Tool",
+							"title_accent": "Fast",
+							"body": "Save time with automatic scaffolding for repetitive tasks. The CLI tool doesn't require internet access or dependencies.",
+							"img": "/cli.png",
+							"alt": "Cli terminal"
+						}
+					]
+				}
+			},
 		  	{
 			  "name": "features",
 			  "fields": {
