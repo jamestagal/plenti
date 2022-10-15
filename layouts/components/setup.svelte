@@ -14,7 +14,7 @@
               <div class="item">
                   <div class="content">
                       <strong><span class="accent">{item.title_accent}</span> <span class="title">{item.title}</span></strong>
-                      <p>{item.body}</p>
+					  <p>{item.body}</p>
                   </div>
                   <div class="img">
                       <img src="assets{item.img}" alt="">
@@ -26,7 +26,7 @@
 
   <style>
     #setup {
-		font-size: 2rem;
+		font-size: 2.5rem;
 		line-height: 3rem;
 		padding: 100px 0;
 	}
@@ -52,7 +52,7 @@
 		font-family: 'NTR', sans-serif;
 	}
 	#setup p {
-		font-size: 1.5rem;
+		font-size: 2.0rem;
 	}
 	#setup img {
 		box-shadow: 0 10px 36px 0 rgba(0,0,0,.16), 0 0 0 1px rgba(0,0,0,.06);
