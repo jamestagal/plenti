@@ -13,7 +13,9 @@
           {#each items as item}
               <div class="item">
                   <div class="content">
-                      <strong><span class="accent">{item.title_accent}</span> <span class="title">{item.title}</span></strong>
+					  <h3 class="h3 section-title" style="margin-block: 0; font-size: 3rem;">
+						<strong> <span class="has-before" style="display: inline;">{item.title_accent}</span></strong></h3>
+					  <strong><span class="title">{item.title}</span></strong>
 					  <p>{item.body}</p>
                   </div>
                   <div class="img">
@@ -44,9 +46,17 @@
 		flex-basis: 0;
     	flex-grow: 1;
 	}
-	#setup strong span.accent {
+/* 	#setup strong span.accent {
 		font-family: 'Kalam', cursive;
 		color: var(--accent-dark);
+	} */
+	#setup :is(.h3) .has-before::before {
+		bottom: 4px;
+		left: 0;
+		width: 100%;
+		height: 6px;
+		background-color: var(--mustard);
+		z-index: -1;
 	}
 	#setup strong span.title {
 		font-family: 'NTR', sans-serif;
