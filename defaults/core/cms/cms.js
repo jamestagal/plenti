@@ -276,25 +276,39 @@
     return h("div", { class: "plenti-component" }, [select, body]);
   }
 
+  // Output size and source rectangle for a media field's width/height/crop options.
+  // With crop, the image covers width x height and the overflow is cut from the centre.
+  // Without crop, it fits inside width x height, keeps its aspect ratio, and is never enlarged.
+  function mediaSize(naturalWidth, naturalHeight, options) {
+    var width = Number(options.width) || 0, height = Number(options.height) || 0;
+    var sw = naturalWidth, sh = naturalHeight, sx = 0, sy = 0;
+    if (options.crop) {
+      width = width || naturalWidth;
+      height = height || naturalHeight;
+      if (!options.width) width = Math.round(naturalWidth * height / naturalHeight);
+      if (!options.height) height = Math.round(naturalHeight * width / naturalWidth);
+      var cover = Math.max(width / sw, height / sh);
+      sw = width / cover; sh = height / cover;
+      sx = (naturalWidth - sw) / 2; sy = (naturalHeight - sh) / 2;
+    } else {
+      var fit = Math.min(1, width ? width / naturalWidth : 1, height ? height / naturalHeight : 1);
+      width = Math.max(1, Math.round(naturalWidth * fit));
+      height = Math.max(1, Math.round(naturalHeight * fit));
+    }
+    return { width: width, height: height, sx: sx, sy: sy, sw: sw, sh: sh };
+  }
+
   function transformMedia(selected, options) {
     if (!isImage(selected) || (!options.width && !options.height && !options.convert)) return Promise.resolve(selected);
     return new Promise(function (resolve, reject) {
       var img = new Image();
       img.onload = function () {
-        var width = Number(options.width) || img.naturalWidth;
-        var height = Number(options.height) || img.naturalHeight;
-        if (!options.width) width = Math.round(img.naturalWidth * height / img.naturalHeight);
-        if (!options.height) height = Math.round(img.naturalHeight * width / img.naturalWidth);
+        var size = mediaSize(img.naturalWidth, img.naturalHeight, options);
+        var width = size.width, height = size.height;
         var canvas = document.createElement("canvas");
         canvas.width = width; canvas.height = height;
         var ctx = canvas.getContext("2d");
-        var sw = img.naturalWidth, sh = img.naturalHeight, sx = 0, sy = 0;
-        if (options.crop) {
-          var scale = Math.max(width / sw, height / sh);
-          sw = width / scale; sh = height / scale;
-          sx = (img.naturalWidth - sw) / 2; sy = (img.naturalHeight - sh) / 2;
-        }
-        ctx.drawImage(img, sx, sy, sw, sh, 0, 0, width, height);
+        ctx.drawImage(img, size.sx, size.sy, size.sw, size.sh, 0, 0, width, height);
         var format = (options.convert || selected.split(".").pop()).toLowerCase().replace("jpg", "jpeg");
         var name = selected.replace(/^\/+/, "").replace(/\.[^.]+$/, "") + "." + (format === "jpeg" ? "jpg" : format);
         commit([{ file: name, action: "upsert", encoding: "base64", contents: canvas.toDataURL("image/" + format, Number(options.quality) || 0.82) }]).then(function () {
